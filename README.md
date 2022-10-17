@@ -8,7 +8,7 @@ Group Project - Web Development Basic
 - biru muda : third
 - putih : light
 - hitam : dark
-- warning : kuning
+- kuning : warning
 - hijau : success
 
 ### Announcement
