@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap');
+/* Clearing Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Style */
+:root {
+    /* Main Color(blue) */
+    --primary-color : #1D3557;
+    /* Secondary Color(powder-blue) */
+    --secondary-color : #A8DADC;
+    /* Third Celadon Blue */
+    --third-color : #457B9D;
+    /* Light Color */
+    --light-color : #F1FAEE;
+    /* Hover Color */
+    --hover-color : #F1FAEE;
+    /* Tambahkan root variabel jika dibutuhkan, biar stylenya konsisten... */
+}
+
+/*
+Override Style
+Timpa Class bootstrap atau buat Class baru jika dibutuhkan... */
+
+/* Button Utama */
+.btn-primary, .btn-sm-primary, .btn-lg-primary {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.btn-primary:hover, .btn-sm-primary:hover, .btn-lg-primary:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: 0.8s;
+    
+}
+
+/* Button Alternatif */
+.btn-secondary, .btn-sm-secondary, .btn-lg-secondary {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+.btn-secondary:hover, .btn-sm-secondary:hover, .btn-lg-secondary:hover {
+    background-color: var(--hover-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transition: 0.8s;
+}
+
+/* Button Alternatif-2 */
+.btn-third, .btn-sm-third, .btn-lg-third {
+    background-color: var(--third-color);
+    border: 2px solid var(--third-color);
+}
+.btn-third:hover, .btn-sm-third:hover, .btn-lg-third:hover {
+    background-color: var(--hover-color);
+    border: 2px solid var(--third-color);
+    color: var(--third-color);
+    transition: 0.8s;
+}
+
+/* Background-color */
+/* .bg-danger(Warna latar Background Utama) {} */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.bg-third {
+    background-color: var(--third-color);
+}
+.bg-light {
+    background-color: var(--light-color);
+}
+/* Untuk warna dark gunakan bawaan bootstrap = .dark */
+
+/* Text-color */
+.text-primary {
+    color: var(--primary-color);
+}
+.text-secondary {
+    color: var(--secondary-color);
+}
+.text-third {
+    color: var(--third-color);
+}
+.text-light {
+    color: var(--light-color);
+}
+/* Untuk warna dark gunakan bawaan bootstrap = .dark */
+
