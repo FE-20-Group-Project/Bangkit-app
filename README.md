@@ -5,7 +5,8 @@ Group Project - Web Development Basic
 1. Clone repository Bangkit.app
 2. Buat branch baru dengan format nama-fitur/halaman
 3. Setelah selesai melakukan perubahan lakukan commit dan push perubahan sesuai dengan nama branch kalian, contoh : git push -u origin fazlu-home-news
-4. Buat pull request dan arahkan ke branch Dev +  tiap melakukan pull request isi pesan apa saja yang sudah kamu dikerjakan
+4. Buat pull request dan arahkan ke branch dev +  tiap melakukan pull request, isi pesan yang menjelaskan progress apa saja yg sudah kamu kerjakan di branch
+5. Branch main jangan diganggu karena akan digunakan untuk tahap production
 
 ### Color-pallete keyword
 - merah : danger
