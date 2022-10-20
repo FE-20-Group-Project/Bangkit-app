@@ -2,3 +2,46 @@
 /*
 Customize.......
 */
+
+/* Navigasi Nav Hover Effect */
+a.nav-link {
+    border: 2px solid var(--danger-color);
+}
+.nav-item:hover > a.nav-link {
+    border-top: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+    transition: 0.8s;
+}
+
+/* Buttob Outline Hover Effect */
+.btn-outline-light:hover {
+    color: var(--danger-color) !important;
+    transition: 0.8s;
+}
+
+/* Card Menu & Caption Cursor Event */
+.card-menu {
+    cursor: pointer !important;
+}
+a.caption-menu.position-absolute {
+    display: none;
+    line-height: 10;
+    font-size: 20px;
+}
+.card:hover a.caption-menu.position-absolute {
+    display: block;
+    transition: 0.8s;
+}
+
+
+
+/* Media Query Responsive */
+@media screen and (max-width: 762px){
+
+    .btn-lg {
+        font-size :14px;
+        word-spacing : 3px;
+    }
+
+}
+

@@ -9,9 +9,190 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <title>Home-page</title>
 </head>
-<body>
+<body class="bg-light">
     <!-- Homepage -->
 
-    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow-lg border-bottom border-light border-3 position-sticky top-0" style="z-index: 9;">
+            <div class="container-fluid px-3 d-flex justify-content-between">
+              <a class="navbar-brand ms-3" href="#">
+                <img src="assets/img/image 18.png" class="rounded" width="100" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li class="nav-item dropdown mx-3">
+                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Layanan</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Lowongan</a></li>
+                        <li><a class="dropdown-item" href="#">Beasiswa</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-3">
+                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Berita</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Data</a></li>
+                        <li><a class="dropdown-item" href="#">News</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <button class="btn btn-outline-light text-light mx-3">Login</button>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Header Information -->
+        <header>    
+            <div class="container-fluid bg-footer">
+                <div class="row d-flex flex-wrap-reverse justify-content-center justify-content-md-evenly p-3 h-50">
+                    <div class="description-header bg-transparant-dark text-light py-3 d-flex align-items-center col-10 col-md-5 col-lg-5 col-xl-5 rounded my-3">
+                        <div class="description-wrapper container">
+                            <h1 class="pb-3 h1-md h2-sm fw-bold text-light">Akses informasi <span class="text-warning">bantuan gratis </span>dari berbagai instansi !</h2>
+                            <a href="#" class="btn btn-lg btn-primary fw-semibold  rounded-pill">Buat akun sekarang !</a>
+                        </div>
+                    </div>
+                    <div class="image-header col-10 col-md-5 col-lg-5 col-xl-5">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/sliderrJob.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/sliderrBeasiswa.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/sliderrCovid.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Features Menu -->
+        <section class="main-feature container my-5">
+          <h3 class="fw-bold text-center h4-sm h3-md text-dark mb-4">Informasi <span class="text-warning">Bantuan</span> <br> <span class="text-danger">Lowongan Pekerjaan & Beasiswa</span></h3>
+            <div class="row d-flex justify-content-center">
+                <div class="card-menu col-6 m-3 card col-sm-3 shadow-lg p-0 position-relative rounded">
+                  <img src="assets/img/job.jpg" alt="Job" class="img-card rounded">
+                  <a class="bg-transparant-dark fw-semibold rounded w-100 h-100 caption-menu text-center position-absolute text-light">Lowongan Pekerjaan</a>
+                </div>
+                <div class="card-menu col-6 m-3 card col-sm-3 shadow-lg p-0 position-relative rounded">
+                  <img src="assets/img/beasiswa.jpg" alt="Job" class="img-card rounded">
+                  <a class="bg-transparant-dark fw-semibold rounded w-100 h-100 caption-menu text-center position-absolute  text-light">Bantuan Beasiswa</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Information -->
+        <section class="news-information container rounded border border-1 border-danger py-4">
+                <h3 class="fw-bold text-center h4-sm h3-md mb-3 text-dark">Data <span class="text-danger">Covid-19</span></h3>
+            <div class="row justify-content-around f-wrap">
+                <div class="col-12 col-md-5 m-3 text-center">
+                    <h4 class="text-dark h4-sm h3-md ">Rujukan Rumah Sakit</h3>
+                    <span class="fa fa-hospital text-warning fs-1 me-3"></span>
+                    <span class="text-dark fs-3 fw-lighter">1.00000</span>
+                </div>
+                <div class="col-12 col-md-5 m-3 text-center">
+                    <h4 class="text-dark h4-sm h3-md ">Jumlah Kasus</h3>
+                    <span class="fa fa-solid fa-virus text-danger fs-1 me-3"></span>
+                    <span class="text-dark fs-3 fw-lighter">1.00000</span>
+                </div>
+            </div>
+            <div class="w-100 text-center">
+              <a href="#" class="btn btn-danger">Lihat Selengkapnya</a>
+              <p class="fw-light text-danger mt-4">Tetap waspada jaga kesehatan, jaga kebersihan, dan jaga jarak. <br> jauhi kerumunan jika tidak ada keperluan mendesak <strong class="fw-bold">#bersamamelawancorona</strong></p>
+            </div>
+        </section>
+
+        <!-- Section Video Embed -->
+        <section class="article bg-primary my-5 py-4 rounded container">
+            <h3 class="text-light h4-sm h3-md h4  fw-bold text-center my-3">Video Motivasi</h2>
+            <div class="row d-flex justify-content-around f-wrap p-0">
+                <div class="col-md-3">
+                  <iframe src="https://www.youtube.com/embed/rtqMGrp9Sq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-3">
+                  <iframe src="https://www.youtube.com/embed/XoWJz0dvsPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-3">
+                  <iframe src="https://www.youtube.com/embed/--hTilV12U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Section Article News -->
+        <section class="article my-5 py-4 container border border-1 border-danger rounded shadow-lg">
+          <h3 class="fw-bold text-center h4-sm h3-md text-dark mb-4">Berita <span class="text-danger">Covid-19</span></h3>
+          <div class="row d-flex justify-content-center justify-content-sm-start flex-wrap mb-3">
+            <div class="col-10 col-md-3 m-2">
+              <img src="assets/img/mask.jpg" class="w-100 h-100 rounded" alt="">
+            </div>
+            <div class="col-10 col-md-8 m-2">
+              <h3 class="fw-semibold text-danger">Title</h3>
+              <small>Senin, 7 maret 2022</small>
+              <p class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, velit debitis nesciunt modi quasi, molestias quo voluptate non tempora magni cumque sunt suscipit corporis at, sint ipsa commodi explicabo! At quod nulla facilis esse ea odit repellat neque corporis sapiente.</p>
+            </div>
+          </div>
+          
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-4">
+      <div class="container-fluid px-4">
+        <div class="row d-flex mb-3 justify-content-between f-wrap">
+          <aside class="corp col-12 col-sm-5">
+            <img src="assets/img/image 18.png" class="rounded" width="100" alt="">
+            <p class="text-light py-3">Jl. Pahlawan No.9, Mugassari, Kec. Semarang Sel.,
+              Kota Semarang, Jawa Tengah 50249</p>
+          </aside>
+          <aside class="navigator text-light col-12 col-sm-3">
+            <ul>
+              <li>
+                <a href="#" class="text-decoration-none text-light">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">Protocol Covid</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="row d-flex justify-content-start">
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-facebook text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-whatsapp text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-instagram text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+        </div>
+      </div>
+      <div class="copyright w-100 mt-5 py-3 bg-transparant-dark d-flex align-items-center justify-content-center" style="height: 60px;">
+        <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
+      </div>
+    </footer>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
