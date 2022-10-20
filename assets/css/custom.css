@@ -43,5 +43,9 @@ a.caption-menu.position-absolute {
         word-spacing : 3px;
     }
 
+    main.register.container {
+        margin: 80px auto 200px;
+    }
+
 }
 
