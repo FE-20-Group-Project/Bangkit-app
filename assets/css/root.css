@@ -82,6 +82,12 @@ Timpa Class bootstrap atau buat Class baru jika dibutuhkan... */
 .bg-transparant-dark {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.bg-footer {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-positon: center;
+}
 /* Untuk warna dark gunakan bawaan bootstrap = .dark */
 
 /* Text-color */

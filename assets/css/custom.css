@@ -3,7 +3,7 @@
 Customize.......
 */
 
-
+/* Navigasi Nav Hover Effect */
 a.nav-link {
     border: 2px solid var(--danger-color);
 }
@@ -13,11 +13,13 @@ a.nav-link {
     transition: 0.8s;
 }
 
+/* Buttob Outline Hover Effect */
 .btn-outline-light:hover {
     color: var(--danger-color) !important;
     transition: 0.8s;
 }
 
+/* Card Menu & Caption Cursor Event */
 .card-menu {
     cursor: pointer !important;
 }
@@ -32,6 +34,8 @@ a.caption-menu.position-absolute {
 }
 
 
+
+/* Media Query Responsive */
 @media screen and (max-width: 762px){
 
     .btn-lg {
