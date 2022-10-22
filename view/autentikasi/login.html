@@ -52,17 +52,17 @@
                     <form action="#" class="p-3">
                         <div class="form-group mb-3">
                             <label class="fw-semibold">Email</label>
-                            <input type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
+                            <input id="email" type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
                         </div>
                         <div class="form-group mb-3">
                             <label class="fw-semibold">Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
+                            <input id="password" type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
                         </div>
                         <div class="form-group w-100 mb-3">
                             <p class="text-start ms-3"><a class="text-danger" href="lupa.html">Lupa Password?</a></p>
                         </div>
                         <div class="form-group mb-3 text-center w-100">
-                            <button class="btn btn-primary mb-3" type="submit" style="width: 200px;">Sign-in</button>
+                            <button id="login" class="btn btn-primary mb-3" type="submit" style="width: 200px;" onclick="login()">Sign-in</button>
                             <p class="border-top border-dark pt-3">Belum punya akun?<a class="text-danger" href="register.html"> ayo daftarkan akunmu disini!</a></p>
                         </div>
                     </form>
@@ -110,5 +110,6 @@
         </div>
       </footer>
     <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/view/autentikasi/login.js"></script>
 </body>
 </html>

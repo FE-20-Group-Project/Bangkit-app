@@ -52,30 +52,30 @@
                     <form action="#" class="p-3 d-flex justify-content-around flex-wrap">
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Username</label>
-                            <input type="text" class="form-control" required placeholder="Masukan Username..." />
+                            <input id="username" type="text" class="form-control" required placeholder="Masukan Username..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Email</label>
-                            <input type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
+                            <input id="email-daftar" type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Nama Lengkap</label>
-                            <input type="text" class="form-control" required min="3" placeholder="Masukan Nama Lengkap..." />
+                            <input id="nama" type="text" class="form-control" required min="3" placeholder="Masukan Nama Lengkap..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Alamat</label>
-                            <input type="text" class="form-control" min="10" required placeholder="Masukan Alamat..." />
+                            <input id="alamat1" type="text" class="form-control" min="10" required placeholder="Masukan Alamat..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
+                            <input id="password-daftar" type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Konfirmasi Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" required placeholder="Masukan Konfirmasi Password..." />
+                            <input id="password-daftar1" type="password" class="form-control" required min="5" max="15" required placeholder="Masukan Konfirmasi Password..." />
                         </div>
                         <div class="form-group mb-3 text-center w-100">
-                            <button class="btn btn-primary mb-3" type="submit" style="width: 200px;">Sign-up</button>
+                            <button id="register" class="btn btn-primary mb-3" type="submit" style="width: 200px;" onClick="daftar" >Sign-up</button>
                             <p class="border-top border-dark pt-3">Sudah punya akun?<a class="text-danger" href="login.html"> login disini!</a></p>
                         </div>
                     </form>
@@ -123,5 +123,6 @@
         </div>
       </footer>
     <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/view/autentikasi/daftar2.js"></script>
 </body>
 </html>
