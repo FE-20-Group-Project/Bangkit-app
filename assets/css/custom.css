@@ -2,6 +2,12 @@
 /*
 Customize.......
 */
+ul {
+    list-style: none;
+}
+.footer-nav:hover {
+    font-weight: 600;
+}
 
 /* Navigasi Nav Hover Effect */
 a.nav-link {
