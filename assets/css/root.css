@@ -90,6 +90,11 @@ Timpa Class bootstrap atau buat Class baru jika dibutuhkan... */
 }
 /* Untuk warna dark gunakan bawaan bootstrap = .dark */
 
+/* Border */
+.border-third {
+    border-color: #457B9D !important;
+}
+
 /* Text-color */
 .text-primary {
     color: var(--primary-color) !important;
