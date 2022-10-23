@@ -49,30 +49,32 @@
         <div class="row vh-100 d-flex align-items-center">
             <div class="col-12 col-sm-11 col-md-10 mx-auto card shadow-lg rounded p-3">
                     <h2 class="text-center mt-3 fw-bold text-dark">Ayo buat Akunmu <br> <span class="text-warning"> Sekarang ! </span></h3>
-                    <form action="#" class="p-3 d-flex justify-content-around flex-wrap">
+                    <form action="#" id="form-register" class="p-3 d-flex justify-content-around flex-wrap">
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Username</label>
-                            <input type="text" class="form-control" required placeholder="Masukan Username..." />
+                            <input type="text" class="form-control" minlength="5" maxlength="12" id="username" required placeholder="Masukan Username..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Email</label>
-                            <input type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
+                            <input type="email" class="form-control" id="email" required placeholder="Masukan Alamat Email..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Nama Lengkap</label>
-                            <input type="text" class="form-control" required min="3" placeholder="Masukan Nama Lengkap..." />
+                            <input type="text" class="form-control" id="name" required minlength="3" maxlength="30" placeholder="Masukan Nama Lengkap..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Alamat</label>
-                            <input type="text" class="form-control" min="10" required placeholder="Masukan Alamat..." />
+                            <input type="text" class="form-control" id="address" minlength="10" maxlength="50" required placeholder="Masukan Alamat..." />
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
+                            <input type="password" class="form-control" id="password" required minlength="5" maxlength="15" placeholder="Masukan Password..." />
+                            <small class="text-gray"> Password harus terdiri dari 8-15 karakter angka, underscore</small>
                         </div>
                         <div class="form-group col-10 col-md-5 mb-3">
                             <label class="fw-semibold">Konfirmasi Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" required placeholder="Masukan Konfirmasi Password..." />
+                            <input type="password" class="form-control" id="confirmation-password" required minlength="5" maxlength="15" required placeholder="Masukan Konfirmasi Password..." />
+                            <small class="text-gray"> Password harus terdiri dari 8-15 karakter, angka, underscore</small>
                         </div>
                         <div class="form-group mb-3 text-center w-100">
                             <button class="btn btn-primary mb-3" type="submit" style="width: 200px;">Sign-up</button>
@@ -122,6 +124,8 @@
           <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
         </div>
       </footer>
+      <script src="../../assets/js/autentikasi/register.js" type="module"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

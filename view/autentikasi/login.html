@@ -49,14 +49,14 @@
         <div class="row vh-100 d-flex align-items-center">
             <div class="col-12 col-sm-8 col-md-6 mx-auto card shadow-lg rounded p-3">
                     <h2 class="text-center mt-3 fw-bold text-dark">Login ke Akunmu <br> <span class="text-warning"> Sekarang ! </span></h3>
-                    <form action="#" class="p-3">
+                    <form action="#" id="form-login" class="p-3">
                         <div class="form-group mb-3">
                             <label class="fw-semibold">Email</label>
-                            <input type="email" class="form-control" required placeholder="Masukan Alamat Email..." />
+                            <input type="email" id="email" class="form-control" required placeholder="Masukan Alamat Email..." />
                         </div>
                         <div class="form-group mb-3">
                             <label class="fw-semibold">Password</label>
-                            <input type="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
+                            <input type="password" id="password" class="form-control" required min="5" max="15" placeholder="Masukan Password..." />
                         </div>
                         <div class="form-group w-100 mb-3">
                             <p class="text-start ms-3"><a class="text-danger" href="lupa.html">Lupa Password?</a></p>
@@ -109,6 +109,8 @@
           <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
         </div>
       </footer>
+      <script src="../../assets/js/autentikasi/login.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

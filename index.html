@@ -41,7 +41,8 @@
                       </ul>
                   </li>
                 </ul>
-                <a href="view/autentikasi/login.html" class="btn btn-outline-light text-light mx-3">Login</a>
+                <a href="view/autentikasi/login.html" id="login-button" class="btn btn-outline-light text-light mx-3">Login</a>
+                <button type="button" id="logout-button" class="btn btn-outline-light text-light mx-3">Logout</button>
               </div>
             </div>
         </nav>
@@ -52,8 +53,8 @@
                 <div class="row d-flex flex-wrap-reverse justify-content-center justify-content-md-evenly p-3 h-50">
                     <div class="description-header bg-transparant-dark text-light py-3 d-flex align-items-center col-10 col-md-5 col-lg-5 col-xl-5 rounded my-3">
                         <div class="description-wrapper container">
-                            <h1 class="pb-3 h1-md h2-sm fw-bold text-light">Akses informasi <span class="text-warning">bantuan gratis </span>dari berbagai instansi !</h2>
-                            <a href="#" class="btn btn-lg btn-primary fw-semibold  rounded-pill">Buat akun sekarang !</a>
+                            <h1 id="text-homepage" class="pb-3 h1-md h2-sm fw-bold text-light">Akses informasi <span class="text-warning">bantuan gratis </span>dari berbagai instansi !</h2>
+                            <a href="/view/autentikasi/register.html" id="button-homepage" class="btn btn-lg btn-primary fw-semibold  rounded-pill">Buat akun sekarang !</a>
                         </div>
                     </div>
                     <div class="image-header col-10 col-md-5 col-lg-5 col-xl-5">
@@ -125,14 +126,14 @@
         <section class="article bg-light my-5 py-4 rounded container">
             <h3 class="text-dark h4-sm h3-md h4  fw-bold text-center my-3">Video Motivasi</h2>
             <div class="row d-flex justify-content-around f-wrap p-0">
-                <div class="col-md-3">
-                  <iframe src="https://www.youtube.com/embed/rtqMGrp9Sq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-10  col-sm-6 col-md-4">
+                  <iframe src="https://www.youtube.com/embed/rtqMGrp9Sq8" class="w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-3">
-                  <iframe src="https://www.youtube.com/embed/XoWJz0dvsPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-10 col-sm-6 col-md-4">
+                  <iframe src="https://www.youtube.com/embed/XoWJz0dvsPY" class="w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-3">
-                  <iframe src="https://www.youtube.com/embed/--hTilV12U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-10 col-sm-6 col-md-4">
+                  <iframe src="https://www.youtube.com/embed/--hTilV12U0" class="w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -192,6 +193,8 @@
         <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
       </div>
     </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="assets/js/home/main.js" type="module"></script>
 </body>
