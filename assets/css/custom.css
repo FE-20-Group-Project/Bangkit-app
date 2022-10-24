@@ -39,7 +39,11 @@ a.caption-menu.position-absolute {
     transition: 0.8s;
 }
 
-
+.line-spacing {
+    letter-spacing: 1.5;
+    word-spacing: 2;
+    font-size: 11px;
+}
 
 /* Media Query Responsive */
 @media screen and (max-width: 762px){
@@ -50,8 +54,12 @@ a.caption-menu.position-absolute {
     }
 
     main.register.container {
-        margin: 80px auto 300px;
+        margin: 30px auto;
     }
+    
+}
 
+@media screen and (max-width: 480px ) {
+   
 }
 
