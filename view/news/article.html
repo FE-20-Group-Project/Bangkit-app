@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../../assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/fontawesome-free-6.2.0-web/css/all.css">
     <link rel="stylesheet" href="../../assets/css/custom.css">
-    <title>Job-Page</title>
+    <title>Article-page</title>
 </head>
-<body class="bg-primary">
+<body class="bg-danger">
     <!-- Homepage -->
 
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow-lg border-bottom border-light border-3 position-sticky top-0" style="z-index: 9;">
+          <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow-lg border-bottom border-light border-3 position-sticky top-0" style="z-index: 9;">
             <div class="container-fluid px-3 d-flex justify-content-between">
               <a class="navbar-brand ms-3" href="../../index.html">
                 <img src="../../assets/img/image 18.png" class="rounded" width="100" alt="">
@@ -27,17 +27,17 @@
                     <a class="nav-link active" aria-current="page" href="../../index.html">Beranda</a>
                   </li>
                   <li class="nav-item mx-3">
-                    <a class="nav-link active" href="lowongan-pekerjaan.html">Loker</a>
+                    <a class="nav-link active" href="../lowongan-pekerjaan.html">Loker</a>
                   </li>
                   <li class="nav-item dropdown mx-3">
                     <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Berita</a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="news/data.html">Data</a></li>
-                        <li><a class="dropdown-item" href="news/article.html">News</a></li>
+                        <li><a class="dropdown-item" href="data.html">Data</a></li>
+                        <li><a class="dropdown-item" href="article.html">News</a></li>
                       </ul>
                   </li>
                 </ul>
-                <a href="../autentikasi/login.html" id="login-button" class="btn btn-outline-light text-light mx-3">Login</a>
+                <a href="view/autentikasi/login.html" id="login-button" class="btn btn-outline-light text-light mx-3">Login</a>
                 <button type="button" id="logout-button" class="btn btn-outline-light text-light mx-3">Logout</button>
               </div>
             </div>
@@ -45,30 +45,15 @@
 
     <!-- Main Content -->
     <main class="py-5">
-      <section class="container bg-light mb-3 p-3 rounded">
-        <h3 class="text-dark fw-bold">Ayo <span class="text-danger">Bangkit</span> bersama dan dapatkan pekerjaan yang berarti bagimu !</h3>
-        <hr>
-        <p class="fw-semibold"><span class="fa fa-pen border-bottom border-danger border-2 rounded me-2 fs-3 text-danger"></span> Daftar sekarang untuk menemukan lowongan yang ingin kamu pilih</p>
-      </section>
-        <section class="container">
-            <div class="row d-flex">
-                <form id="formSearchJob">
-                    <div class="row g-3">
-                        <div class="col-sm-7">
-                          <input type="search" id="searchJob" class="form-control" placeholder="Kata kunci, perusahaan, kategori">
-                        </div>
-                      </div>
-                </form>
-            </div>
-        </section>
 
-        <section class="container rounded bg-light py-3 my-3">
-            <small class="ms-3"><span id="total-result"></span> Total Pencarian.</small>
-            <div id="job-list" class="row d-flex justify-content-evenly flex-wrap">
-                
-            </div>
+        <!-- Section Article News -->
+        <section class="article py-md-5 py-3 container-sm  py-md-5 my-3 py-3 bg-light rounded shadow-lg">
+          <h2 class="fw-bold text-center h4-sm h3-md mb-3 text-dark">Berita <span class="text-danger">Covid-19</span></h2>
+          <div id="content-article">
+         
+          </div>
+          
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -112,9 +97,8 @@
         <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
       </div>
     </footer>
-    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="../assets/js/bantuan/lowongan.js" type="module"></script>
+    <script src="../../assets/js/information/article.js" type="module"></script>
 </body>
 </html>
