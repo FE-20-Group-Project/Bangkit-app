@@ -36,7 +36,16 @@ const checkSession = () => {
 const securityAutenticate = () => {
 
     if(!sessionStorage.getItem(USER_KEY)) {
-            window.location = "../../view/autentikasi/login.html";
+            Swal.fire({
+                title: 'Maaf...',
+                confirmButtonColor: '#DC3545',
+                text: 'Maaf anda harus login terlebih dhaulu!',
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location = "../../view/autentikasi/login.html";
+                }
+            });
+
     }
 
 }
