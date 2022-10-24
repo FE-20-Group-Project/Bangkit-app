@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../../assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/fontawesome-free-6.2.0-web/css/all.css">
     <link rel="stylesheet" href="../../assets/css/custom.css">
-    <title>Home-page</title>
+    <title>Job-Page</title>
 </head>
-<body class="bg-light">
+<body class="bg-primary">
     <!-- Homepage -->
 
     <!-- Navbar -->
@@ -26,18 +26,14 @@
                   <li class="nav-item mx-3">
                     <a class="nav-link active" aria-current="page" href="../../index.html">Beranda</a>
                   </li>
-                  <li class="nav-item dropdown mx-3">
-                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Layanan</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="lowongan-pekerjaan.html">Lowongan</a></li>
-                        <li><a class="dropdown-item" href="beasiswa.html">Beasiswa</a></li>
-                      </ul>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" href="lowongan-pekerjaan.html">Loker</a>
                   </li>
                   <li class="nav-item dropdown mx-3">
                     <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Berita</a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="data.html">Data</a></li>
-                        <li><a class="dropdown-item" href="article.html">News</a></li>
+                        <li><a class="dropdown-item" href="../view/news/data.html">Data</a></li>
+                        <li><a class="dropdown-item" href="../view/news/article.html">News</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -48,25 +44,20 @@
         </nav>
 
     <!-- Main Content -->
-    <main class="py-5 bg-third ">
-        <h1 class="text-warning text-center">Lowongan Pekerjaan</h1>
+    <main class="py-5">
+        <h1 class="text-warning py-3 text-center">Lowongan Pekerjaan</h1>
         <div class="container">
             <div class="row d-flex">
-                <form action="">
+                <form id="formSearchJob">
                     <div class="row g-3">
                         <div class="col-sm-7">
-                          <input type="search" class="form-control" placeholder="Kata kunci, perusahaan" aria-label="City">
-                        </div>
-                        <div class="col-sm">
-                          <select name="" class="form-control" id="select-input-job">
-                         
-                          </select>
+                          <input type="search" id="searchJob" class="form-control" placeholder="Kata kunci, perusahaan, kategori">
                         </div>
                       </div>
                 </form>
             </div>
         </div>
-        <div class="container-fluid bg-light py-3 my-3">
+        <div class="container rounded bg-light py-3 my-3">
             <small class="ms-3"><span id="total-result"></span> Total Pencarian.</small>
             <div id="job-list" class="row d-flex justify-content-evenly flex-wrap">
                 
