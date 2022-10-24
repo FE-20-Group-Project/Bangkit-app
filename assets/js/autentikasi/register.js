@@ -48,6 +48,7 @@ const register = async (formulir, form) => {
        return Swal.fire({
         icon: 'error',
         title: 'Maaf...',
+        confirmButtonColor: '#DC3545',
         text: 'Email sudah terdaftar, silahkan gunakan email lain!',
       });
     }else if( findUsername !== -1 ) {
@@ -55,11 +56,11 @@ const register = async (formulir, form) => {
         return Swal.fire({
             icon: 'error',
             title: 'Maaf...',
+            confirmButtonColor: '#DC3545',
             text: 'Username sudah terdaftar, silahkan gunakan username lain!',
           });
     }
     else {
-        die();
         fetch(API + 'users', {
             method : 'POST',
             headers : {
@@ -71,6 +72,7 @@ const register = async (formulir, form) => {
         return Swal.fire({
             icon: 'success',
             title: 'Akun berhasil terdaftar!',
+            confirmButtonColor: '#DC3545',
             footer: '<a href="../../view/autentikasi/login.html">Silahkan login disini</a>'
           });
 

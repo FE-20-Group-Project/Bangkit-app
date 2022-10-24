@@ -46,9 +46,31 @@
     <!-- Main Content -->
     <main class="bg-danger py-5">
 
+      <section class="caption bg-light rounded p-3 container">
+          <ul class="list-group">
+            <li class="fw-semibold">* Seluruh data ditulis/ dihitung berdasarkan status terakhir pasien</li>
+            <li class="fw-semibold">* Data diupdate setiap pukul 16.00 WIB</li>
+          </ul>
+      </section>
+
+        <div class="container my-3">
+            <div class="row d-flex">
+                <form id="formSearchData">
+                    <div class="row g-3">
+                        <div class="col-sm-7">
+                          <select id="searchData" class="form-control dropdown w-50" placeholder="Kata kunci">
+
+                          </select>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
         <!-- Section Information -->
-        <section class="news-information container rounded border border-1 border-danger bg-light py-md-5 py-3">
-                <h3 class="fw-bold text-center h4-sm h3-md mb-3 text-dark">Data <span class="text-danger">Covid-19 Tiap Provinsi</span></h3>
+        <section class="news-information container rounded bg-light py-md-5 my-3 py-3">
+          <h1 class="text-dark fw-bold py-3 text-center">Statistik Kasus <span class="text-danger">COVID-19</span></h1>
+          <p class="text-primary text-center">Data berikut merupakan akumulasi data pasien COVID-19 yang dirawat di Jawa Tengah (termasuk pasien berdomisili luar Jawa Tengah)</p>
+          <small class="ms-3"><span id="total-result"></span> Total Pencarian.</small>
                   <div id="data-covid" class="row justify-content-evenly f-wrap">
                 
                   </div>
@@ -66,8 +88,7 @@
         <div class="row d-flex mb-3 justify-content-between f-wrap">
           <aside class="corp col-12 col-sm-5">
             <img src="../../assets/img/image 18.png" class="rounded" width="100" alt="">
-            <p class="text-light py-3">Jl. Pahlawan No.9, Mugassari, Kec. Semarang Sel.,
-              Kota Semarang, Jawa Tengah 50249</p>
+            <p class="text-light py-3">Group 20 Front-End , Challange Partner : National University of Singapore, Skilvul Tech4Impact Cycle 3 MSIB Kampus Merdeka.</p>
           </aside>
           <aside class="navigator text-light col-12 col-sm-3">
             <ul>

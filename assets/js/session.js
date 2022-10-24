@@ -19,9 +19,10 @@ const checkSession = () => {
             const userName = JSON.parse(userSession);
             
             if( textBanner || buttonHome ){
-                buttonHome.setAttribute('href', 'view/lowongan-pekerjaan.html');
-                buttonHome.innerText = "Lihat informasi Loker disini !";
-                textBanner.innerHTML = `Selamat Datang, <span class="text-warning">${userName.name}</span>`;
+                // buttonHome.setAttribute('href', 'view/lowongan-pekerjaan.html');
+                // buttonHome.innerText = "Lihat informasi Loker disini !";
+                buttonHome.style.display = "none";
+                textBanner.innerHTML = `Selamat Datang, <span class="text-warning fw-bold">${userName.name}</span>`;
             }
             loginButton.style.display = "none";
             logoutButton.style.display = "block";
