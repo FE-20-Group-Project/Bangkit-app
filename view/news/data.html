@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <title>News-Info-page</title>
+</head>
+<body class="bg-light">
+    <!-- Homepage -->
+
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow-lg border-bottom border-light border-3 position-sticky top-0" style="z-index: 9;">
+            <div class="container-fluid px-3 d-flex justify-content-between">
+              <a class="navbar-brand ms-3" href="../../index.html">
+                <img src="../../assets/img/image 18.png" class="rounded" width="100" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="../../index.html">Beranda</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" href="../lowongan-pekerjaan.html">Loker</a>
+                  </li>
+                  <li class="nav-item dropdown mx-3">
+                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Berita</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="data.html">Data</a></li>
+                        <li><a class="dropdown-item" href="article.html">News</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <a href="../autentikasi/login.html" id="login-button" class="btn btn-outline-light text-light mx-3">Login</a>
+                <button type="button" id="logout-button" class="btn btn-outline-light text-light mx-3">Logout</button>
+              </div>
+            </div>
+        </nav>
+
+    <!-- Main Content -->
+    <main class="bg-danger py-5">
+
+        <!-- Section Information -->
+        <section class="news-information container rounded border border-1 border-danger bg-light py-4">
+                <h3 class="fw-bold text-center h4-sm h3-md mb-3 text-dark">Data <span class="text-danger">Covid-19 Tiap Provinsi</span></h3>
+                  <div id="data-covid" class="row justify-content-evenly f-wrap">
+                
+                  </div>
+
+            <div class="w-100 text-center">
+              <p class="fw-light text-danger mt-4">Tetap waspada jaga kesehatan, jaga kebersihan, dan jaga jarak. <br> jauhi kerumunan jika tidak ada keperluan mendesak <strong class="fw-bold">#bersamamelawancorona</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-4">
+      <div class="container-fluid px-4">
+        <div class="row d-flex mb-3 justify-content-between f-wrap">
+          <aside class="corp col-12 col-sm-5">
+            <img src="../../assets/img/image 18.png" class="rounded" width="100" alt="">
+            <p class="text-light py-3">Jl. Pahlawan No.9, Mugassari, Kec. Semarang Sel.,
+              Kota Semarang, Jawa Tengah 50249</p>
+          </aside>
+          <aside class="navigator text-light col-12 col-sm-3">
+            <ul>
+              <li>
+                <p class="text-light fw-semibold">Information</p>
+              </li>
+              <li>
+                <a class="footer-nav text-light" href="#" class="text-decoration-none text-light">F.A.Q</a>
+              </li>
+              <li>
+                <a class="footer-nav text-light" href="#" class="text-decoration-none text-light">About</a>
+              </li>
+              <li>
+                <a class="footer-nav text-light" href="#" class="text-decoration-none text-light">Protocol Covid</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="row d-flex justify-content-start">
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-facebook text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-whatsapp text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+          <a href="#" class="soc-media col-1" style="width: 80px;">
+            <span class="fa fa-brands fa-instagram text-light fs-3 bg-danger rounded-circle p-2"></span>
+          </a>
+        </div>
+      </div>
+      <div class="copyright w-100 mt-5 py-3 bg-transparant-dark d-flex align-items-center justify-content-center" style="height: 60px;">
+        <h6 class="text-center text-light"><span class="fa fa-copyright"></span> Copyright | FE-20</h6>
+      </div>
+    </footer>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../../assets/js/information/information.js" type="module"></script>
+</body>
+</html>
