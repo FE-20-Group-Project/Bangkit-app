@@ -43,6 +43,8 @@ const securityAutenticate = () => {
               }).then((result) => {
                 if (result.isConfirmed) {
                     window.location = "../../view/autentikasi/login.html";
+                }else {
+                    window.location = "../../view/autentikasi/login.html";
                 }
             });
 
